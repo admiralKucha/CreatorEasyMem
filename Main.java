@@ -21,7 +21,7 @@ public class Main {
             return;
         }
         switch (args[0]) {
-            case "help": help(args); break;
+            case "help": help(); break;
             case "mem": mem(args); break;
             default: System.out.println("Неверная функция");
         }
@@ -199,7 +199,7 @@ public class Main {
 
     }
 
-    public static void help(String[] args) {
+    public static void help() {
         System.out.println("###################################");
         System.out.println("Существует функция mem:");
         System.out.println("  Обязательный ввод:");
@@ -230,6 +230,6 @@ public class Main {
         System.out.println("        1.2) NEW НАЗВАНИЕ ФАЙЛА - Записывает в указанный файл (нужный файл " +
                 "вместо НАЗВАНИЕ ФАЙЛА, разрешение указывать не нужно(по умолчанию test)\n");
         System.out.println("  Пример:");
-        System.out.println("    java -jar myapp.jar mem C:\\7B_ZSTleM78.jpg Hello size = 12 font = BOLD color = BLACK save = NEW test2.smthWrong locationY = TOP locationX = RIGHT");
+        System.out.println("    java -jar myapp.jar mem C:\\7B_ZSTleM78.jpg Hello size = 20 font = ITALIC color = YELLOW save = NEW test2.smthWrong locationY = TOP locationX = RIGHT");
     }
 }
